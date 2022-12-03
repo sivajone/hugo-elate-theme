@@ -208,16 +208,16 @@
 		}
 	};
 
-	var workAnimate = function() {
-		if ( $('#fh5co-work').length > 0 ) {	
+	var galleryAnimate = function() {
+		if ( $('#fh5co-gallery').length > 0 ) {	
 
-			$('#fh5co-work').waypoint( function( direction ) {
+			$('#fh5co-gallery').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#fh5co-work .to-animate').each(function( k ) {
+						$('#fh5co-gallery .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -460,7 +460,7 @@
 		// Animations
 		homeAnimate();
 		introAnimate();
-		workAnimate();
+		galleryAnimate();
 		testimonialAnimate();
 		servicesAnimate();
 		aboutAnimate();

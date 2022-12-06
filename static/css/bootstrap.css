@@ -4695,7 +4695,7 @@ tbody.collapse.in {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -4984,7 +4984,7 @@ tbody.collapse.in {
   margin-top: 17.5px;
   margin-bottom: 17.5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-text {
     float: left;
     margin-left: 15px;
@@ -4992,7 +4992,7 @@ tbody.collapse.in {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-left {
     float: left !important;
   }

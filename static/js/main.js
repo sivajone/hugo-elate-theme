@@ -203,40 +203,69 @@
             $(this.element).addClass("animated");
           }
         },
-        { offset: "75rem" }
-      );
-    }
-  };
-
-
-
-  var contactAnimate = function () {
-    var contact = $("#fh5co-contact");
-    if (contact.length > 0) {
-      contact.waypoint(
-        function (direction) {
-          if (direction === "down" && !$(this.element).hasClass("animated")) {
-            setTimeout(function () {
-              contact.find(".to-animate").each(function (k) {
-                var el = $(this);
-
-                setTimeout(
-                  function () {
-                    el.addClass("fadeInUp animated");
-                  },
-                  k * 200,
-                  "easeInOutExpo"
-                );
-              });
-            }, 200);
-
-            $(this.element).addClass("animated");
-          }
-        },
         { offset: "80%" }
       );
     }
   };
+
+
+
+//   var contactAnimate = function () {
+//     var contact = $("#fh5co-contact");
+//     if (contact.length > 0) {
+//       contact.waypoint(
+//         function (direction) {
+//           if (direction === "down" && !$(this.element).hasClass("animated")) {
+//             setTimeout(function () {
+//               contact.find(".to-animate").each(function (k) {
+//                 var el = $(this);
+
+//                 setTimeout(
+//                   function () {
+//                     el.addClass("fadeInUp animated");
+//                   },
+//                   k * 200,
+//                   "easeInOutExpo"
+//                 );
+//               });
+//             }, 200);
+
+//             $(this.element).addClass("animated");
+//           }
+//         },
+//         { offset: "80%" }
+//       );
+//     }
+//   };
+
+// var contactAnimate = function () {
+//     var contact = $("#fh5co-contact");
+//     if (contact.length > 0) {
+//       contact.waypoint(
+//         function (direction) {
+//           if (direction === "down" && !$(this.element).hasClass("animated")) {
+//             setTimeout(function () {
+//               contact.find(".to-animate").each(function (k) {
+//                 var el = $(this);
+
+//                 setTimeout(
+//                   function () {
+//                     el.addClass("fadeInUp animated");
+//                   },
+//                   k * 200,
+//                   "easeInOutExpo"
+//                 );
+//               });
+//             }, 200);
+
+//             $(this.element).addClass("animated");
+//           }
+//         },
+//         { offset: "80%" }
+//       );
+//     }
+//   };
+
 
   // Document on load.
   $(function () {
@@ -256,6 +285,6 @@
     homeAnimate();
     galleryAnimate();
     aboutAnimate();
-    contactAnimate();
+    // contactAnimate();
   });
 })();
